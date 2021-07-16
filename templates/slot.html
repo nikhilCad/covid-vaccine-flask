@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<title>Covid Vaccination Slots</title>
+</head>
+<body>
+	<h1 style="text-align: center;background-color: black;color: white;">Vaccination Slots Availability</h1>
+	<br><br><br><br>
+	<div>
+		<!-- {% for item in data%}
+			{% endfor %} -->
+		<table class="table table-hover" style="background-color: aqua;">
+			<thead>
+			<tr>
+				<th>Pincode</th>
+				<th>Date</th>
+				<th>Vaccination Center Name</th>
+				<th>BlockName</th>
+				<th>Price</th>
+				<th>Available Capacity</th>
+				<th>Vaccine Type</th>
+			</tr>
+			</thead>
+			<tbody>
+			{% for item in data%}
+			<tr>
+				<td>{{item[0]}}</td>
+				<td>{{item[1]}}</td>
+				<td>{{item[2]}}</td>
+				<td>{{item[3]}}</td>
+				<td>{{item[4]}}</td>
+				<td>{{item[5]}}</td>
+				<td>{{item[6]}}</td>
+			</tr>
+			{% endfor %}
+			</tbody>
+		</table>
+	</div>
+	<h3 style="margin-top: 50px;text-align: center;">
+	<a href = "https://www.cowin.gov.in/home">Visit Government Website for Booking Slot</a></h1>
+</body>
+</html>

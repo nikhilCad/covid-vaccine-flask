@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="/static/img/style.css">
+	<title>Covid Vaccination Slots</title>
+</head>
+<body>
+	<h2 class="text-center" style="background-color: rgb(2, 2, 2);padding: 5px;color: white;">Find Your Vaccination Slots
+	</h2>
+	<div class="container-fluid" style="margin-top: 0px;">
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+			<div class="carousel-item active" style="height: 350px">
+				<img src="/static/img/geeks.png" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item" style="height: 350px">
+				<img src="/static/img/geeks.png"
+					class="d-block w-100" alt="...">
+			</div>
+			<!-- <div class="carousel-item" style="height: 400px">
+				<img src="/static/img/cor.jpeg" class="d-block w-100" alt="...">
+				</div> -->
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+			data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+			data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div>
+	<h2 style="text-align: center;margin-top: 50px;">Enter Your Credentials here </h2>
+	<div style="margin-left: 620px;margin-top: 10px;">
+		<form class="formed" action="/CheckSlot">
+			<Label>Pincode</Label>
+			<input type="text" name="pincode" placeholder="Enter Your Pincode Here" style="padding: 10px;margin: 5px 5px;border-radius: 5px;"><br>
+			<Label>Age</Label>
+			<input type="number" name="age" placeholder="Enter Your Age Here" style="padding: 10px;margin: 5px 33px;border-radius: 5px;"><br>
+			<input type="submit" style="margin-top: 20px;margin-bottom: 30px;background-color: rgb(26, 151, 224);color: white;padding: 8px;border: 5px;" name="submit" value="Search">
+		</form>
+	</div>
+	<!-- Optional JavaScript; choose one of the two! -->
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+	<!-- Option 2: Separate Popper and Bootstrap JS -->
+	<!--
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+		-->
+</body>
+</html>
